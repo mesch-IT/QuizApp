@@ -4,12 +4,81 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Quiz App</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  Hello world
+
+
+  <!-- section for registered -->
+  <section id="homeSection">
+    <h1>JavaScript Quiz</h1>
+    <p class="describe">Évaluez vos connaissances en JavaScript en répondant aux questions que nous avons spécialement
+      sélectionnées
+      pour vous.
+      C'est fun et c'est gratuit. </p>
+    <form action="#" id="form">
+
+      <p class="fieldsFrom">Name</p>
+      <input type="text" id="name" class="input-data">
+
+      <p class="fieldsFrom">Email</p>
+      <input type="email" id="email" class="input-data"><br>
+
+      <input type="submit" value="Commencer" class="commencer">
+    </form>
+  </section>
+  <!-- section for first question -->
+  <section class=" section-question" id="first-section">
+    <p class="question">Quel est le type d'un fichier JavaScript?</p>
+    <p class="questions">Question 1/15</p>
+    <div id="text">
+      60
+    </div>
+    <div id="outerbar">
+      <div id="innerbar">
+      </div>
+     
+
+    </div>
+    <div class="answers">
+      <ul id="radio-group">
+        <li><input type="radio" name="answer" value=".jsx" id="input-radio">.jsx</li>
+        <li><input type="radio" name="answer" value=".js">.js</li>
+        <li><input type="radio" name="answer" value=".java">.java</li>
+        <li><input type="radio" name="answer" value=".html">.html</li>
+      </ul>
+      <button class="btn-quitter">Quitter</button>
+      <button type="submit" id="suivant">Suivant</button>
+    </div>
+  </section>
+  <!-- section for second question -->
+  <section id="two-section" class="section-question">
+    <p class="question">Comment faire appelle à une fonction nommée « sum »?</p>
+    <p class="questions">Question 1/15</p>
+    <div id="text">
+      60
+    </div>
+    <div id="outerbar">
+      <div id="innerbar">
+      </div>
+     
+
+    </div>
+    <div class="answers">
+      <ul id="radio-groups">
+        <li><input type="radio" name="answer" value="sum()">sum()</li>
+        <li><input type="radio" name="answer" value="call sum()">call sum()</li>
+        <li><input type="radio" name="answer" value="call function sum()">call function sum()</li>
+        <li><input type="radio" name="answer" value="return sum">return sum</li>
+      </ul>
+      <button class="btn-quitter">Quitter</button>
+      <button type="submit" id="suivant" disabled>suivant</button>
+    </div>
+  </section>
+
+
   <script src="script.js"></script>
 </body>
 
