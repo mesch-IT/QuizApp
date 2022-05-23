@@ -266,7 +266,6 @@ left: 0%;
 right: 0%;
 top: 10%;
 bottom: 0%;
-
 font-family: 'Inter';
 font-style: normal;
 font-weight: 500;
@@ -278,7 +277,7 @@ color: #555555;
 }
 .printEmail{
   position: absolute;
-left: 33.51%;
+left: 25%;
 right: 33.39%;
 top: 27%;
 bottom: 62.04%;

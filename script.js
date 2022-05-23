@@ -72,6 +72,7 @@ function eventListeners() {
   radioGroup[11].addEventListener('click', enableButton12)
   radioGroup[12].addEventListener('click', enableButton13)
   radioGroup[13].addEventListener('click', enableButton14)
+  radioGroup[14].addEventListener('click',enableButton15)
   btnSuivant1.addEventListener('click', bttnSuivant1)
   btnSuivant2.addEventListener('click', bttnSuivant2)
   btnSuivant3.addEventListener('click', bttnSuivant3)
@@ -122,7 +123,7 @@ function newUser(e) {
     mac[0].style.width = progress + '%'
     tex[0].textContent = width
 
-    if (width == 50) {
+    if (width == 0) {
       enableButton1()
       btnSuivant1.click()
     }
@@ -157,7 +158,7 @@ function bttnSuivant1() {
     mac[1].style.width = progress + '%'
     tex[1].textContent = width
 
-    if (width == 50) {
+    if (width == 0) {
       enableButton2()
       btnSuivant2.click()
     }
@@ -189,7 +190,7 @@ function bttnSuivant2() {
     mac[2].style.width = progress + '%'
     tex[2].textContent = width
 
-    if (width == 50) {
+    if (width == 0) {
       enableButton3()
       btnSuivant3.click()
     }
@@ -220,7 +221,7 @@ function bttnSuivant3() {
     mac[3].style.width = progress + '%'
     tex[3].textContent = width
 
-    if (width == 50) {
+    if (width == 0) {
       enableButton4()
       btnSuivant4.click()
     }
@@ -250,7 +251,7 @@ function bttnSuivant4() {
     mac[4].style.width = progress + '%'
     tex[4].textContent = width
 
-    if (width == 50) {
+    if (width == 0) {
       enableButton5()
       btnSuivant5.click()
     }
@@ -281,7 +282,7 @@ function bttnSuivant5() {
     mac[5].style.width = progress + '%'
     tex[5].textContent = width
 
-    if (width == 50) {
+    if (width == 0) {
       enableButton6()
       btnSuivant6.click()
     }
@@ -312,7 +313,7 @@ function bttnSuivant6() {
     mac[6].style.width = progress + '%'
     tex[6].textContent = width
 
-    if (width == 50) {
+    if (width == 0) {
       enableButton7()
       btnSuivant7.click()
     }
@@ -343,7 +344,7 @@ function bttnSuivant7() {
     mac[7].style.width = progress + '%'
     tex[7].textContent = width
 
-    if (width == 50) {
+    if (width == 0) {
       enableButton8()
       btnSuivant8.click()
     }
@@ -372,7 +373,7 @@ function bttnSuivant8() {
     mac[8].style.width = progress + '%'
     tex[8].textContent = width
 
-    if (width == 50) {
+    if (width == 0) {
       enableButton9()
       btnSuivant9.click()
     }
@@ -403,7 +404,7 @@ function bttnSuivant9() {
     mac[9].style.width = progress + '%'
     tex[9].textContent = width
 
-    if (width == 50) {
+    if (width == 0) {
       enableButton10()
       btnSuivant10.click()
     }
@@ -432,7 +433,7 @@ function bttnSuivant10() {
     mac[10].style.width = progress + '%'
     tex[10].textContent = width
 
-    if (width == 50) {
+    if (width == 0) {
       enableButton11()
       btnSuivant11.click()
     }
@@ -462,7 +463,7 @@ function bttnSuivant11() {
     mac[11].style.width = progress + '%'
     tex[11].textContent = width
 
-    if (width == 50) {
+    if (width == 0) {
       enableButton12()
       btnSuivant12.click()
     }
@@ -492,7 +493,7 @@ function bttnSuivant12() {
     mac[12].style.width = progress + '%'
     tex[12].textContent = width
 
-    if (width == 50) {
+    if (width == 0) {
       enableButton13()
       btnSuivant13.click()
     }
@@ -522,7 +523,7 @@ function bttnSuivant13() {
     mac[13].style.width = progress + '%'
     tex[13].textContent = width
 
-    if (width == 50) {
+    if (width == 0) {
       enableButton14()
       btnSuivant14.click()
     }
@@ -551,7 +552,7 @@ function bttnSuivant14() {
     mac[14].style.width = progress + '%'
     tex[14].textContent = width
 
-    if (width == 50) {
+    if (width == 0) {
       enableButton15()
       btnSuivant15.click()
     }
