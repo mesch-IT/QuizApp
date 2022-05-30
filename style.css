@@ -96,6 +96,19 @@ input[type="email"] {
   outline: none;
   border: 1px solid #DDDDDD;
 }
+input[name="answer"]{
+  accent-color: green;
+  
+}
+
+.btn-radio{
+  width: 20px;
+    height: 20px;
+    border: none;
+    
+
+}
+
 
 .error {
   font-size: 10px;

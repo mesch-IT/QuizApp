@@ -562,7 +562,7 @@ function bttnSuivant15() {
   console.log(count);
 
 
-  if (count >= 7) {
+  if (count > 7) {
     nameSucces.textContent = names
     emailSucces.textContent = emails
     succes.style.display = 'block'
@@ -586,7 +586,7 @@ function bttnSuivant15() {
 btnQuitter.forEach(btn => {
   btn.addEventListener('click', () => {
 
-    if (count >= 7) {
+    if (count > 7) {
       divs[0].style.display = 'none'
       nameSucces.textContent = names
       emailSucces.textContent = emails
