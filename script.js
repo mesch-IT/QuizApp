@@ -83,6 +83,8 @@ function eventlisteners() {
   btnSuivant13.addEventListener('click', bttnSuivant13)
   btnSuivant14.addEventListener('click', bttnSuivant14)
   btnSuivant15.addEventListener('click', bttnSuivant15)
+  btnaccueilFail.addEventListener('click', acceuilFail)
+btnaccueilSucces.addEventListener('click', acceuilSucces)
 }
 // functions
 let timer = null
@@ -675,5 +677,6 @@ function acceuilSucces() {
   document.location.reload(true)
 }
 function acceuilFail() {
+  
   document.location.reload(true)
 }
