@@ -93,7 +93,6 @@ let names
 let emails
 let checkEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
-// management the first question page
 function newUser(e) {
   e.preventDefault()
   names = document.getElementById('name').value
