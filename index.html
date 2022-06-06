@@ -14,7 +14,7 @@
     <div class="home">
       <div class="accueil">
         <div class="titre">
-          <h1>JavaScript Quiz</h1>
+          <h1 class="titleh1">JavaScript Quiz</h1>
         </div>
         <div class="describ">
           <p>Évaluez vos connaissances en JavaScript en répondant aux questions que nous avons spécialement
@@ -25,13 +25,13 @@
         <form action="" id="formAccueil">
           <div>
             <label for="nom">Nom</label><br>
-            <input type="text" name="nom" id="name">
-            <p class="error" id="nameError">N'oubliez pas de renseigner votre nom avant de commencer le Quiz.</p>
+            <input type="text" name="nom" id="name" class="input" placeholder="Joseph">
+            <p class="error" id="nameError"></p>
           </div>
           <div>
             <label for="email">E-mail</label><br>
-            <input type="email" name="email" id="email">
-            <p class="error" id="emailError"> N'oubliez pas de renseigner votre email avant de commencer le Quiz.</p>
+            <input type="text" name="email" id="email" class="input" placeholder="joseph@kinshasadigital.com">
+            <p class="error" id="emailError"></p>
           </div>
           <div class="boutton">
             <input type="submit" value="Commencer" name="" id="commencer">
@@ -323,7 +323,7 @@
       <div class="div7">
         <div class="accueil">
           <div class="describ">
-            <p>JavaScript est identique à Java?</p>
+            <p>Laquelle des fonctions suivantes trie les éléments d’un tableau?</p>
           </div>
         </div>
         <div class="timer">
@@ -341,10 +341,16 @@
         <div class="formulaire">
           <div class="form">
             <div class="radio">
-              <input type="radio" name="answer" value="vrai" id="input-radio" class="btn-radio"><span>Vrai</span>
+              <input type="radio" name="answer" value="toSource()" id="input-radio" class="btn-radio"><span>toSource()</span>
             </div>
             <div class="radio">
-              <input type="radio" name="answer" value="faux" class="btn-radio"><span>Faux</span>
+              <input type="radio" name="answer" value="sort()" class="btn-radio"><span>sort()</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value=" toString()" class="btn-radio"><span> toString()</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="unshift()" class="btn-radio"><span>unshift()</span>
             </div>
           </div>
           <div class="btn">
@@ -723,7 +729,7 @@
               <button class="quitter btn-quitter">Quitter</button>
             </div>
             <div class="boutton">
-              <input type="button" class="suivant" value="Suivant" name="" id="btn-suivant15" disabled>
+              <input type="button" class="suivant" value="Terminer" name="" id="btn-suivant15" disabled>
             </div>
           </div>
         </div>

@@ -48,6 +48,7 @@ let btnSuivant15 = document.getElementById('btn-suivant15')
 let btnQuitter = document.querySelectorAll('.btn-quitter')
 let nameError = document.getElementById('nameError')
 let emailError = document.getElementById('emailError')
+let input = document.querySelectorAll('.input')
 // event listeners
 eventlisteners()
 
@@ -90,23 +91,37 @@ btnaccueilSucces.addEventListener('click', acceuilSucces)
 let timer = null
 let names
 let emails
+let checkEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
 // management the first question page
 function newUser(e) {
   e.preventDefault()
-  // read data of name and email
-
   names = document.getElementById('name').value
   emails = document.getElementById('email').value
-
-  if (names.length == 0) {
+    if (names == "") {
     nameError.style.display = 'block'
+    nameError.innerText = "N'oubliez pas de renseigner votre nom avant de commencer le Quiz."
+    input[0].style.border = '1px solid red'
+  }
 
+  if(names.length > 0 && names.length < 2) {
+    nameError.innerHTML = 'Veuillez renseigner un nom avec au moins deux caractères.'
+    nameError.style.display = 'block'
+    input[0].style.border = '1px solid red'
   }
-  if (emails.length == 0) {
+  if (emails  == "") {
+    
+    emailError.innerText = " N'oubliez pas de renseigner votre email avant de commencer le Quiz."
     emailError.style.display = 'block'
+    input[1].style.border = '1px solid red'
   }
-  if ((names.length >= 1) && (emails.length >= 1)) {
+   if (!(checkEmail.test(emails)) && emails.length > 0) {
+    emailError.innerText = " Veuillez renseigner une adresse mail valide."
+    emailError.style.display = 'block'
+    input[1].style.border = '1px solid red'
+   
+  }
+  if ((names.length >= 2) && (checkEmail.test(emails))) {
     // add class homepage to home section
     home.style.display = 'none'
     // set timer for the first question
@@ -129,6 +144,8 @@ function newUser(e) {
     // display first section
     div1.style.display = 'block'
   }
+ 
+ 
 
 }
 
@@ -334,7 +351,7 @@ function bttnSuivant7() {
   let answers = document.querySelector('input[ name="answer"]:checked')
   if (answers) {
     getSelected = answers.value
-    if (getSelected == "faux") {
+    if (getSelected == "sort()") {
       count += 1
     }
   }
@@ -577,14 +594,6 @@ function bttnSuivant15() {
   }
 
 }
-
-
-// btnQuitter[0].addEventListener('click',()=>{
-//     console.log("salut");
-// })
-
-
-
 btnQuitter.forEach(btn => {
   btn.addEventListener('click', () => {
 
